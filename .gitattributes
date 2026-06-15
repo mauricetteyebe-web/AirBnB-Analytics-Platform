@@ -1,3 +1,7 @@
 *.csv filter=lfs diff=lfs merge=lfs -text
 *.db filter=lfs diff=lfs merge=lfs -text
 *.duckdb filter=lfs diff=lfs merge=lfs -text
+airbnb/airbnb.db filter=lfs diff=lfs merge=lfs -text
+airbnb/dev.duckdb filter=lfs diff=lfs merge=lfs -text
+airbnb/seeds/reviews.csv filter=lfs diff=lfs merge=lfs -text
+scripts/backup/reviews_backup.csv filter=lfs diff=lfs merge=lfs -text
