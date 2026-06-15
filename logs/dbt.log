@@ -1,0 +1,52 @@
+[0m02:05:16.896131 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 02:05:17.006603 | 37b70be4-076b-414f-b5dc-2f6554591b99 ==============================
+[0m02:05:17.006603 [info ] [MainThread]: Running with dbt=1.11.11
+[0m02:05:17.008602 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\annma\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init airbnb', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m02:05:17.150636 [debug] [MainThread]: Starter project path: C:\Users\annma\OneDrive\Documents\MBA\MBA 2\DevOps\workspace\duckdb\AirBnB-Analytics-Platform\venv\Lib\site-packages\dbt\include\starter_project
+[0m02:05:17.177280 [info ] [MainThread]: 
+Your new dbt project "airbnb" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m02:05:17.178282 [info ] [MainThread]: Setting up your profile.
+[0m02:05:22.141091 [debug] [MainThread]: Command `dbt init` succeeded at 02:05:22.141091 after 5.31 seconds
+[0m02:05:22.143623 [debug] [MainThread]: Flushing usage events
+[0m02:34:48.396604 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 02:34:48.508795 | aab57b8f-3f44-479b-8544-3fe7014ff30f ==============================
+[0m02:34:48.508795 [info ] [MainThread]: Running with dbt=1.11.11
+[0m02:34:48.511212 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\annma\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt seed', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m02:34:48.512657 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\annma\OneDrive\Documents\MBA\MBA 2\DevOps\workspace\duckdb\AirBnB-Analytics-Platform\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m02:34:48.514675 [debug] [MainThread]: Command `dbt seed` failed at 02:34:48.514675 after 0.19 seconds
+[0m02:34:48.516185 [debug] [MainThread]: Flushing usage events
+[0m13:52:28.940787 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 13:52:29.162814 | 2395176a-46c3-4def-827f-34189a21c30e ==============================
+[0m13:52:29.162814 [info ] [MainThread]: Running with dbt=1.11.11
+[0m13:52:29.166788 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\annma\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt seed', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m13:52:29.168872 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\annma\OneDrive\Documents\MBA\MBA 2\DevOps\workspace\duckdb\AirBnB-Analytics-Platform\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:52:29.172894 [debug] [MainThread]: Command `dbt seed` failed at 13:52:29.171897 after 0.41 seconds
+[0m13:52:29.175434 [debug] [MainThread]: Flushing usage events

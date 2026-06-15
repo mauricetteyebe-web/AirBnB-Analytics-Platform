@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: silver_hosts
+    columns:
+      - name: host_id
+        tests:
+          - unique
+          - not_null
+
+  - name: silver_listings
+    columns:
+      - name: listing_id
+        tests:
+          - unique
+          - not_null
+      - name: price
+        tests:
+          - not_null
+
+  - name: silver_reviews
+    columns:
+      - name: listing_id
+        tests:
+          - not_null
+      - name: review_text
+        tests:
+          - not_null
