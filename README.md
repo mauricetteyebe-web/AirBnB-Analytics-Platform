@@ -1,9 +1,3 @@
-# AirBnB-Analytics-Platform
-Airbnb souhaite mettre en place une plateforme analytique qui analyse les données et de mettre à disposition des indicateurs.
-
-Voici le README en syntaxe Markdown GitHub parfaite à copier-coller directement :
-
-```markdown
 # 🏠 AirBnB Analytics Platform
 
 ## Présentation du projet
@@ -21,61 +15,57 @@ Il consiste à construire une plateforme analytique complète sur les données A
 
 ## Architecture
 
-```
-CSV Seeds (données brutes)
-        │
-        ▼
-    Bronze (dbt)
-    Tables brutes sans transformation
-        │
-        ▼
-    Silver (dbt)
-    Nettoyage, typage, renommage des colonnes
-        │
-        ▼
-    Gold (dbt)
-    Data products : vues analytiques et tables finales
-        │
-        ▼
-    Streamlit
-    Dashboard interactif pour les utilisateurs métier
-```
+    CSV Seeds (données brutes)
+            │
+            ▼
+        Bronze (dbt)
+        Tables brutes sans transformation
+            │
+            ▼
+        Silver (dbt)
+        Nettoyage, typage, renommage des colonnes
+            │
+            ▼
+        Gold (dbt)
+        Data products : vues analytiques et tables finales
+            │
+            ▼
+        Streamlit
+        Dashboard interactif pour les utilisateurs métier
 
 ---
 
-## Structure des éléments importants du projet
+## Structure du projet
 
-```
-AirBnB-Analytics-Platform/
-├── airbnb/
-│   ├── models/
-│   │   ├── bronze/
-│   │   │   ├── bronze_hosts.sql
-│   │   │   ├── bronze_listings.sql
-│   │   │   ├── bronze_reviews.sql
-│   │   │   └── bronze_full_moon_dates.sql
-│   │   ├── silver/
-│   │   │   ├── silver_hosts.sql
-│   │   │   ├── silver_listings.sql
-│   │   │   ├── silver_reviews.sql
-│   │   │   ├── silver_full_moon_dates.sql
-│   │   │   └── schema.yml
-│   │   └── gold/
-│   │       ├── gold_dim_hosts.sql
-│   │       ├── gold_dim_listings.sql
-│   │       ├── gold_fact_reviews.sql
-│   │       └── gold_full_moon_reviews.sql
-│   ├── seeds/
-│   │   ├── hosts.csv
-│   │   ├── listings.csv
-│   │   └── seed_full_moon_dates.csv
-│   └── dbt_project.yml
-├── scripts/
-│   └── clean_reviews.py
-├── streamlit_app.py
-├── .gitignore
-└── README.md
-```
+    AirBnB-Analytics-Platform/
+    ├── airbnb/
+    │   ├── models/
+    │   │   ├── bronze/
+    │   │   │   ├── bronze_hosts.sql
+    │   │   │   ├── bronze_listings.sql
+    │   │   │   ├── bronze_reviews.sql
+    │   │   │   └── bronze_full_moon_dates.sql
+    │   │   ├── silver/
+    │   │   │   ├── silver_hosts.sql
+    │   │   │   ├── silver_listings.sql
+    │   │   │   ├── silver_reviews.sql
+    │   │   │   ├── silver_full_moon_dates.sql
+    │   │   │   └── schema.yml
+    │   │   └── gold/
+    │   │       ├── gold_dim_hosts.sql
+    │   │       ├── gold_dim_listings.sql
+    │   │       ├── gold_fact_reviews.sql
+    │   │       └── gold_full_moon_reviews.sql
+    │   ├── seeds/
+    │   │   ├── hosts.csv
+    │   │   ├── listings.csv
+    │   │   └── seed_full_moon_dates.csv
+    │   └── dbt_project.yml
+    ├── scripts/
+    │   └── clean_reviews.py
+    ├── streamlit_app.py
+    ├── .gitignore
+    └── README.md
 
 ---
 
@@ -100,46 +90,35 @@ Les fichiers sources sont les suivants :
 
 ### Prérequis
 
-```bash
-pip install dbt-duckdb duckdb pandas streamlit
-```
+    pip install dbt-duckdb duckdb pandas streamlit
 
 ### Étape 1 — Nettoyer le fichier reviews.csv
 
-```bash
-python scripts/clean_reviews.py
-```
+Le fichier `reviews.csv` contient des guillemets imbriqués non conformes au standard CSV strict de DuckDB.
+Un script de nettoyage a été développé pour corriger ce problème avant l'ingestion.
+
+    python scripts/clean_reviews.py
 
 ### Étape 2 — Charger les seeds
 
-```bash
-dbt seed
-```
+    dbt seed
 
 ### Étape 3 — Lancer les transformations
 
-```bash
-dbt run
-```
+    dbt run
 
 ### Étape 4 — Lancer les tests de qualité
 
-```bash
-dbt test
-```
+    dbt test
 
 ### Étape 5 — Générer la documentation dbt
 
-```bash
-dbt docs generate
-dbt docs serve
-```
+    dbt docs generate
+    dbt docs serve
 
 ### Étape 6 — Lancer le dashboard Streamlit
 
-```bash
-streamlit run streamlit_app.py
-```
+    streamlit run streamlit_app.py
 
 ---
 
@@ -201,13 +180,5 @@ Tables brutes chargées directement depuis les seeds CSV sans transformation.
 
 ## Auteure
 
-**Ann Yebe Ollomo**
-MBA Big Data & Intelligence Artificielle — MBA ESG Paris — Promotion 2026
+**Ann Yebe Ollomo**  
 
----
-
-## Soumission
-
-Livrable envoyé à : axel@logbrain.fr
-Intitulé : **MBAESG_EVALUATION_MANAGEMENT_OPERATIONNEL_2026**
-```
