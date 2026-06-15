@@ -1,1 +1,7 @@
 .venv
+airbnb/airbnb.db
+airbnb/dev.duckdb
+airbnb/seeds/reviews.csv
+Scripts/backup/
+*.duckdb
+*.db
