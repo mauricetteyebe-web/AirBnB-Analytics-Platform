@@ -1,4 +1,3 @@
-```markdown
 # 🏠 AirBnB Analytics Platform
 
 ## Présentation du projet
@@ -243,4 +242,4 @@ Le fichier original est sauvegardé dans `scripts/backups/reviews_backup.csv`.
 **Ann Yebe Ollomo**  
 MBA Big Data & Intelligence Artificielle — MBA ESG Paris  
 Juin 2026
-```
+
